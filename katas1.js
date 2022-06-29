@@ -35,7 +35,6 @@ function oddsToTwenty() {
 //oddsToTwenty()
 console.log(oddsToTwenty())
 
-
 function multiplesOfFive() {
   let lista = []
   for(let i = 0; i <= 100; i++){
@@ -49,11 +48,10 @@ function multiplesOfFive() {
 //multiplesOfFive()
 console.log(multiplesOfFive())
 
-
 function squareNumbers() {
   let lista = []
   for(let i = 0; i <= 100; i++){
-    if(Number.isInteger(Math.sqrt(i))){
+    if(squareroot(i) === true){
       lista.push(i)
       //console.log(i)
     }
@@ -62,7 +60,6 @@ function squareNumbers() {
 }
 //squareNumbers()
 console.log(squareNumbers())
-
 
 function countingBackwards() {
   let lista = []
@@ -74,7 +71,6 @@ function countingBackwards() {
 }
 //countingBackwards()
 console.log(countingBackwards())
-
 
 function evenNumbersBackwards() {
   let lista = []
@@ -89,7 +85,6 @@ function evenNumbersBackwards() {
 //evenNumbersBackwards()
 console.log(evenNumbersBackwards())
 
-
 function oddNumbersBackwards() {
   let lista = []
   for(let i = 20; i >= 0; i--){
@@ -102,7 +97,6 @@ function oddNumbersBackwards() {
 }
 //oddNumbersBackwards()
 console.log(oddNumbersBackwards())
-
 
 function multiplesOfFiveBackwards() {
   let lista = []
@@ -117,11 +111,10 @@ function multiplesOfFiveBackwards() {
 //multiplesOfFiveBackwards()
 console.log(multiplesOfFiveBackwards())
 
-
 function squareNumbersBackwards() {
   let lista = []
   for(let i = 100; i >= 0; i--){
-    if(Number.isInteger(Math.sqrt(i))){
+    if(squareroot(i) === true){
       lista.push(i)
       //console.log(i)
     }
@@ -130,3 +123,12 @@ function squareNumbersBackwards() {
 }
 //squareNumbers()
 console.log(squareNumbersBackwards())
+
+function squareroot(number){
+  for(let i = 0; i * i <= number; i++){
+    if(i * i == number){
+      return true
+    }
+  }
+  return false
+}
